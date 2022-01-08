@@ -9,14 +9,14 @@ def events(jock):
             sys.exit()
         #вправо
         elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_d:
+            if event.key == pygame.K_d or event.key == pygame.K_RIGHT:
                 jock.move_r = True
-            elif event.key == pygame.K_a:
+            elif event.key == pygame.K_a or event.key == pygame.K_LEFT:
                 jock.move_l = True
         elif event.type == pygame.KEYUP:
-                if event.key == pygame.K_d:
+                if event.key == pygame.K_d or event.key == pygame.K_RIGHT:
                     jock.move_r = False
-                elif event.key == pygame.K_a:
+                elif event.key == pygame.K_a or event.key == pygame.K_LEFT:
                     jock.move_l = False
 
 

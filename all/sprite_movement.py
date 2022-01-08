@@ -16,3 +16,7 @@ class Falling_Sprite(pygame.sprite.Sprite):
             self.rect.y += self.speed
         else:
             self.rect.y = 0
+
+    def output(self, screen):
+        """отрисовка качка"""
+        screen.blit(self.image, self.rect)
